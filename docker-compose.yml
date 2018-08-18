@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  uchain-explorer:
+    build: .
+    restart: always
+    image: uchain-explorer:latest
+    container_name: uchain-explorer
+    volumes:
+      - ./data:/uchain-explorer/data
+    ports:
+      - "3000:3000"

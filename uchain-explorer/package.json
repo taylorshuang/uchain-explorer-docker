@@ -1,0 +1,12 @@
+{
+  "description": "A full Ulord node build with Ulord",
+  "repository": "https://github.com/UlordChain",
+  "license": "MIT",
+  "readme": "README.md",
+  "dependencies": {
+    "bitcore-lib-ulord": "^1.0.7", 
+    "bitcore-node-ulord": "^0.1.4",
+    "insight-api-ulord": "^0.1.1", 
+    "insight-ui-ulord": "^0.1.1"
+  }
+}

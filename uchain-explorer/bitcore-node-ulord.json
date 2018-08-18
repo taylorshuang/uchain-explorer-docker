@@ -1,0 +1,25 @@
+{
+  "network": "main",
+  "port": 3000,
+  "services": [
+    "bitcoind",
+    "insight-api-ulord",
+    "insight-ui-ulord",
+    "web"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/uchain-explorer/data",
+        "exec": "/uchain-explorer/node_modules/bitcore-node-ulord/bin/ulordd"
+      }
+    },
+    "insight-ui-ulord": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-api-ulord": {
+      "routePrefix": "api"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /uchain-explorer/node_modules/bitcore-node-ulord/bin && ./bitcore-node-ulord start
