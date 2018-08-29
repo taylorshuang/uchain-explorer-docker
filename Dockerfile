@@ -14,7 +14,8 @@ RUN cd /uchain-explorer && npm install && \
     cd /uchain-explorer/node_modules/bitcore-node-ulord && npm update && \
     cd /uchain-explorer/node_modules/bitcore-lib-ulord && npm update
 RUN cd /uchain-explorer/node_modules/bitcore-node-ulord/bin && \
-    wget https://github.com/UlordChain/UlordChain/releases/download/Version-1-0-0/ulordchain_ubuntu_v_1_0_0.tar.gz && tar xvf ulordchain_ubuntu_v_1_0_0.tar.gz
+    wget https://github.com/UlordChain/UlordChain/releases/download/Version-1-1-0/ulordchain_ubuntu_v_1_1_0.tar.gz && \
+    tar xvf ulordchain_ubuntu_v_1_1_0.tar.gz
 
 ADD entrypoint /
 CMD ["/entrypoint"]

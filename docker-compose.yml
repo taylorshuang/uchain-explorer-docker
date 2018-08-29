@@ -4,7 +4,7 @@ services:
   uchain-explorer:
     build: .
     restart: always
-    image: uchain-explorer:latest
+    image: uchain-explorer:1.1.0
     container_name: uchain-explorer
     volumes:
       - ./data:/uchain-explorer/data
